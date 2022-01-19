@@ -1,0 +1,10 @@
+include header.pug
+//- include nav.pug
+h1= message
+div(class="container gallery__container")
+    each val in data
+        div(class="gallery__container-item" id=val.id)
+            img(class="gallery__container-photo", src=val.image_url)
+            div=val.title 
+            div=val.date
+            div(style=`font-size: .85rem; text-align: center;color: white; padding: 1rem; background-color: rgb(${val.avcolor})`)=`Predominant color in RGB: ${val.avcolor}` 

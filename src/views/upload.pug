@@ -1,0 +1,12 @@
+include header.pug
+//- include nav.pug
+h1= message
+div(class="container")
+    form(class="form__upload container" method="post" action="./upload")
+        label(class="form__upload-label") Title
+            input(type="text", class="form__upload-input", name="title")
+        label(class="form__upload-label") Image URL
+            input(type="url", class="form__upload-input", name="image_url")
+        label(class="form__upload-label") Date
+            input(type="date", class="form__upload-input", name="date")
+        input(type="submit", class="btn-primary" value="Enviar")
