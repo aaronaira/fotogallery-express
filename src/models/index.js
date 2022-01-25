@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const fototecaSchema = new mongoose.Schema({
     title: String,
     image_url: String,
-    date: { type: Date, default: Date.now },
+    date: String,
     dominantColor: [Number]
 
 })

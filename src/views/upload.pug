@@ -1,7 +1,9 @@
 include header.pug
-//- include nav.pug
+include nav.pug
 h1= message
 div(class="container")
+    if imageAlreadyExist
+        div.alert-msg The image that you are trying to upload already exists in our gallery
     form(class="form__upload container" method="post" action="./upload")
         label(class="form__upload-label") Title
             input(type="text", class="form__upload-input", name="title")

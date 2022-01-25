@@ -8,6 +8,7 @@ const database = require('./src/config/database')
 // Middlewares
 app.use(express.urlencoded({ extended: false }))
 
+
 // Routes
 app.use('/', routes)
 
