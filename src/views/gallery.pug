@@ -7,4 +7,4 @@ div(class="container gallery__container")
             img(class="gallery__container-photo", src=val.image_url)
             div=val.title 
             div=val.date
-            div(style=`font-size: .85rem; text-align: center;color: white; padding: 1rem; background-color: rgb(${val.avcolor})`)=`Predominant color in RGB: ${val.avcolor}` 
+            div(style=`font-size: .85rem; text-align: center;color: white; padding: 1rem; background-color: rgb(${val.dominantColor})`)=`Predominant color in RGB: ${val.dominantColor}` 
